@@ -25,4 +25,4 @@ Built with HTML and CSS.
 ### **Links**
 
 - [Solution URL](https://github.com/christianmu/nft_preview_card.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- [Live Site URL](https://christianmu.github.io/nft_preview_card/)
