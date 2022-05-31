@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line-blue: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: var(--main-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 6.9%;
+}
+
+h2 {
+  font-weight: 300;
+  font-size: 18px;
+  margin-top: 6.9%;
+  color: var(--soft-blue);
+}
+
+hr {
+  border: 1px solid var(--line-blue);
+  margin-top: 6.9%;
+}
+
+footer {
+  display: flex;
+  margin-top: 6.9%;
+  align-items: center;
+}
+
+.container {
+  width: 350px;
+  background-color: var(--card-bg);
+  border-radius: 16px;
+}
+
+.card {
+  color: var(--white);
+  width: 86%;
+  margin: 6.9% auto 9.2%;
+}
+
+.image {
+  position: relative;
+}
+
+
+.image_img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.image_overlay {
+  position: absolute;
+  border-radius: 8px;
+  background-color: var(--cyan);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: ease-in 0.5s;
+}
+
+.text {
+  display: grid;
+  grid-template-columns: 2fr 18fr 2fr 7fr;
+  margin-top: 6.9%;
+}
+
+.days {
+  color: var(--soft-blue);
+}
+
+.text-cyan {
+  color: var(--cyan);
+  font-size: 16px;
+}
+
+.text-blue {
+  color: var(--soft-blue);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.text-white {
+  color: var(--white);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.avatar {
+  width: 33px;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.image_overlay:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.span_text:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.span_h1:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+
+
+@media only screen and (max-width: 375px) {
+
+  .container {
+    width: 327px;
+  }
+
+  .text {
+    grid-template-columns: 2fr 10fr 2fr 5fr;
+  }
+
+  .text-cyan {
+    font-size: 15px;
+  }
+  
+  .text-blue {
+    font-size: 15px;
+  }
+
+  .span_text {
+    font-size: 15px;
+  }
+}
